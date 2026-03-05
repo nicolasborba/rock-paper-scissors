@@ -8,12 +8,17 @@ let getComputerChoice = function() {
   let randomNumber = Math.floor(Math.random() * 3) + 1;
   console.log(randomNumber);
 
-
-
-
-
+  switch (randomNumber) {
+    case 1:  
+      return "Rock";
+    case 2:
+      return "Paper";
+    default:
+      return "Scissors";
+  }
 
 }
 
 
-getComputerChoice();
+computerChoice = getComputerChoice();
+console.log(computerChoice);
