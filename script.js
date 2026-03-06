@@ -27,6 +27,7 @@ let humanNumber
 
 function getHumanChoice() {
 
+  // get the player choice
   humanNumber = prompt("Do you choose Rock, Paper or Scissors? Enter 1 for Rock, 2 for Paper and 3 for Scissors");
   humanNumber = Number(humanNumber);
   console.log(humanNumber);
@@ -43,3 +44,13 @@ function getHumanChoice() {
 
 humanChoice = getHumanChoice();
 console.log(humanChoice);
+
+
+let humanScore = 0;
+let computerScore = 0;
+
+// basic logic of the game
+
+function playRound(humanChoice, computerChoice) {
+  
+}
