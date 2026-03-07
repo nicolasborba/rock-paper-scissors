@@ -9,30 +9,6 @@ function getComputerChoice() {
   console.log(randomNumber);
 
   switch (randomNumber) {
-    case 1:  
-      return "Rock";
-    case 2:
-      return "Paper";
-    default:
-      return "Scissors";
-  }
-
-}
-
-computerChoice = getComputerChoice();
-console.log(computerChoice);
-
-let humanChoice;
-let humanNumber
-
-function getHumanChoice() {
-
-  // get the player choice
-  humanNumber = prompt("Do you choose Rock, Paper or Scissors? Enter 1 for Rock, 2 for Paper and 3 for Scissors");
-  humanNumber = Number(humanNumber);
-  console.log(humanNumber);
-
-  switch (humanNumber) {
     case 1:
       return "Rock";
     case 2:
@@ -40,10 +16,20 @@ function getHumanChoice() {
     default:
       return "Scissors";
   }
+
 }
 
-humanChoice = getHumanChoice();
-console.log(humanChoice);
+let humanChoice;
+let humanNumber
+
+function getHumanChoice() {
+
+  // get the player choice
+  humanChoice = prompt("Do you choose Rock, Paper or Scissors?");
+  humanChoice = humanChoice.toLowerCase();
+  console.log(humanChoice);
+
+}
 
 
 let humanScore = 0;
@@ -51,6 +37,14 @@ let computerScore = 0;
 
 // basic logic of the game
 
+computerChoice = getComputerChoice();
+console.log(computerChoice);
+getHumanChoice();
 function playRound(humanChoice, computerChoice) {
+
+
   
+
 }
+
+playRound(humanChoice, computerChoice);
